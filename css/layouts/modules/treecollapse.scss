@@ -1,0 +1,63 @@
+.sec-title-desc{
+  h3{
+    @extend .title-h3;
+    @include border-radius($du*2 $du*2 $null $null);
+
+  }
+  p{
+    @extend .warn-description;
+    border-top: $theme--clr-semidark solid 3px;
+    @include border-radius($null $null $du*2 $du*2);
+    margin-bottom: $du*10;
+  }
+}
+.treecollapse{
+  width: 100%;
+  display: table;
+  h3{
+    font-size: $du*6;
+    font-weight: bold;
+    cursor: pointer;
+
+    i.fa{
+      margin-right: $du*5.5;
+      font-size: $du*8;
+      vertical-align: middle;
+      padding: $du--pm/2;
+      color: $theme--clr-bright;
+      background-color: $theme--clr-dark;
+      @include border-radius($du*2);
+    }
+  }
+  h4{
+    font-size: $du*6;
+    vertical-align: middle;
+    cursor: pointer;
+    border: thin solid $theme--clr-gray;
+    margin: $du*5 $null $null;
+    &:last-child{
+      margin-bottom: $du*5;
+    }
+    i.fa{
+      margin-right: $du*5.5;
+      font-size: $du*12;
+      vertical-align: middle;
+      padding: $du--pm/2;
+    }
+
+  }
+  p{
+    font-size: $du*6;
+    font-weight: 300;
+    color: $theme--clr-dark;
+    height: $du*20;
+    overflow-y: hidden;
+    box-sizing: content-box;
+    display: block;
+    float: left;
+    clear: both;
+    // &:first-child{
+    //   margin-top: $null;
+    // }
+  }
+}

@@ -1,0 +1,29 @@
+.doa-data-table{
+  width: 100%;
+  display: table;
+  margin:$null $null   $du*5 $null;
+  tr{
+    th{
+      padding:$du*5;
+      border: thin solid $theme--clr-gray;
+      border-top: $du+1 solid $theme--clr-gray;
+    }
+    td{
+      padding: $du*5;
+      vertical-align: middle;
+      border: thin solid $theme--clr-gray;
+      @include border-radius($du*2);
+      &:first-child{
+        width:$du*220;
+        background-color: $theme--clr-bright;
+
+      }
+    }
+    &:nth-child(odd){
+      background-color: $theme--clr-bright;
+    }
+    &:nth-child(even){
+      background-color: $theme--clr-gray;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "fonts";
+@include font-face('Montserrat', 'montserrat-regular-webfont', 400, 'normal');
+@include font-face('fontawesome', 'fontawesome-webfont', 'normal');
+
+$primary-font:"Montserrat";
+
+h1,h2,h3,h4,h5,h6,p,span,b,font{
+  font-family: $primary-font;
+  margin: $null;
+  padding: $null;
+}
+
+p{
+  color: $theme--clr-dark;
+  font-size: $du*5.5;
+}

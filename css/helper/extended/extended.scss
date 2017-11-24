@@ -1,0 +1,18 @@
+.c--center{
+  max-width: 98%;
+  width: 100%;
+  margin: auto;
+  display: table;
+}
+
+.title-h3{
+  font-family: $primary-font;
+  padding: $du*10;
+  background-color: $theme--clr-gray;
+}
+
+.warn-description{
+  font-family: $primary-font;
+  padding: $du*10;
+  background-color: $theme--clr-gray;
+}

@@ -1,0 +1,39 @@
+.bg-faded{
+  background: none;
+  &.navbar{
+    > a{
+      padding: $null;
+    }
+    padding: $null;
+    .navbar-brand{
+      width: $du*107;
+      display: inline-block;
+      img{
+        float: left;
+        margin-right: $du*3;
+      }
+      b{
+        text-transform: uppercase;
+        color: $theme--clr-bright;
+        vertical-align: top;
+        font-size:$du*15;
+      }
+      span{
+        text-transform: uppercase;
+        color: $theme--clr-bright;
+        vertical-align: top;
+        display: block;
+        font-size:$du*5.5;
+
+      }
+    }
+
+    h1{
+      display: table;
+      color: $theme--clr-bright;
+      vertical-align: bottom;
+      
+    }
+  }
+
+}
