@@ -1,0 +1,11 @@
+.login{
+  .login-box{
+    width:$du*225;
+    @extend .vh--cevter;
+    background-color: $theme--clr-bright;
+    padding: $du--pm*2;
+    @include border-radius($du*5);
+    
+  }
+
+}

@@ -1,0 +1,24 @@
+footer{
+  .brand-details{
+    h5{
+      float: right;
+      vertical-align: middle;
+      display: inline-block;
+      width: 49%;
+      padding: $du*10 $null;
+      text-align: right;
+      font-size: $small+4;
+      font-weight: bold;
+      margin-right: $du*5;
+    }
+    .footer-logo{
+      float: right;
+      background-color: $theme--clr-dark;
+      padding: $du*5;
+      img{
+        width: $du*60;
+      }
+    }
+  }
+
+}

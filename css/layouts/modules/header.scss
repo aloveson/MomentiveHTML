@@ -16,14 +16,14 @@
         text-transform: uppercase;
         color: $theme--clr-bright;
         vertical-align: top;
-        font-size:$du*15;
+        font-size:$medium - 2;
       }
       span{
         text-transform: uppercase;
         color: $theme--clr-bright;
         vertical-align: top;
         display: block;
-        font-size:$du*5.5;
+        font-size:$small - 2;
 
       }
     }
@@ -32,7 +32,7 @@
       display: table;
       color: $theme--clr-bright;
       vertical-align: bottom;
-      
+
     }
   }
 

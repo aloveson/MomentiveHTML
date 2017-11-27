@@ -2,7 +2,13 @@
 @include font-face('Montserrat', 'montserrat-regular-webfont', 400, 'normal');
 @include font-face('fontawesome', 'fontawesome-webfont', 'normal');
 
-$primary-font:"Montserrat";
+$primary-font:"Montserrat" !default;
+$small:$du*7;
+$medium:$du*12;
+$large:$du*16;
+$large-x:$du*24;
+
+body{font-family:$primary-font}
 
 h1,h2,h3,h4,h5,h6,p,span,b,font{
   font-family: $primary-font;
@@ -12,5 +18,8 @@ h1,h2,h3,h4,h5,h6,p,span,b,font{
 
 p{
   color: $theme--clr-dark;
-  font-size: $du*5.5;
+  font-size: $small;
+  letter-spacing: .5px;
+  line-height: 1.3;
+  margin-bottom: $du*5;
 }

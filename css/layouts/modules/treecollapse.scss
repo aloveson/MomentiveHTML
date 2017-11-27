@@ -15,13 +15,13 @@
   width: 100%;
   display: table;
   h3{
-    font-size: $du*6;
+    font-size: $small;
     font-weight: bold;
     cursor: pointer;
 
     i.fa{
       margin-right: $du*5.5;
-      font-size: $du*8;
+      font-size: $small;
       vertical-align: middle;
       padding: $du--pm/2;
       color: $theme--clr-bright;
@@ -30,7 +30,7 @@
     }
   }
   h4{
-    font-size: $du*6;
+    font-size: $small;
     vertical-align: middle;
     cursor: pointer;
     border: thin solid $theme--clr-gray;
@@ -40,14 +40,14 @@
     }
     i.fa{
       margin-right: $du*5.5;
-      font-size: $du*12;
+      font-size: $medium;
       vertical-align: middle;
       padding: $du--pm/2;
     }
 
   }
   p{
-    font-size: $du*6;
+    font-size: $small;
     font-weight: 300;
     color: $theme--clr-dark;
     height: $du*20;

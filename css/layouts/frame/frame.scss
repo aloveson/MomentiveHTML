@@ -23,35 +23,20 @@ body{
   }
   .maincontent{
     background-color:$theme--clr-bright;
-    padding: $du--pm;
+    padding-top: $du--pm;
+    padding-bottom: $du--pm;
+    padding-left:$du--pm;
+    padding-right:$du--pm;
+    //@extend .container-fluid;
     @extend .c--center;
     @include border-radius($du*2);
     margin-bottom: $du*15;
+    //max-width: 96.5%;
   }
   footer{
     background-color:$theme--clr-bright;
     padding: $du--pm;
     @extend .c--center;
     @include border-radius($du*2);
-    .brand-details{
-      h5{
-        float: left;
-        vertical-align: middle;
-        display: inline-block;
-        width: 49%;
-        padding: $du*10 $null;
-        text-align: right;
-        font-size: $du*9;
-      }
-      .footer-logo{
-        float: right;
-        background-color: $theme--clr-dark;
-        padding: $du*5;
-        img{
-          width: $du*100;
-        }
-      }
-    }
-
   }
 }

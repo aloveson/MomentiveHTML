@@ -16,3 +16,13 @@
   padding: $du*10;
   background-color: $theme--clr-gray;
 }
+
+.vh--cevter{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &:parent{
+    position: relative;
+  }
+}

@@ -1,0 +1,14 @@
+.candidate-info{
+  label{
+    text-transform: uppercase;
+    color: rgba($theme--clr-dark,.3);
+    font-size: $small;
+    font-weight: bold;
+    font-family: $primary-font;
+  }
+  h2{
+    font-size: $du*10;
+    margin-bottom: $du*15;
+    font-family: $primary-font;
+  }
+}
