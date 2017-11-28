@@ -31,114 +31,43 @@
 //   });
 // });
 
-var tablePadTop;
-    (function($) {
-
-      $.fn.itemPopover = function() {
-        $(this).popover({
-          html: true,
-          placement: 'top',
-          trigger: 'hover',
-          delay: {show: 400, hide: 100}
-        });
-      }
 
 
-      // $.fn.loop = function(callback, thisArg) {
-      //       var me = this;
-      //       //return this.each(function(index, element) {
-      //         $(this).addClass(function(index) {
-      //              return 'itemRow' + (index + 1);
-      //          });
-      //       //});
-      //   };
+(function($) {
 
-      $.fn.getDtableTopPadding = function(){
-        // var getHgtone = $('h3').height();
-        // var getClassName = $('h3').attr('class');
-        // var getCount = $('h3').length;
-        // $(this).addClass(function(index) {
-        //     return 'itemRow' + (index + 1);
-        // });
+  // var headerHgt = $('header').height();
+  // console.log(headerHgt);
 
-        //console.log(getHgtone);
-        //console.log(this.className);
-        //console.log(getCount);
+  $.fn.itemPopover = function() {
+    $(this).popover({
+      html: true,
+      placement: 'top',
+      trigger: 'hover',
+      delay: {show: 400, hide: 100}
+    });
+  }//itemPopover end
 
-
-
-        $(this).each(function() {
-          $('.doa-data-table').css('display','none');
-          var getTMarg = parseInt( $('.collapse .collapse p').css('marginTop')+ $('.collapse .collapse p').css('marginBottom'));
-          // $('h4').on("click", function(){
-          //
-          //   setTimeout(function(){
-          //     $('.doa-data-table').css('display','table')
-          //     var lOneHeight = $('.collapse .collapse').position().top;
-          //     var lTwoHeight = $('.doa-data-table tr th').innerHeight();
-          //     var tdHeight = $('.collapse .collapse p').outerHeight();
-          //     $('.doa-data-table').css('margin-top',lOneHeight - lTwoHeight);
-          //     $('.doa-data-table tr td').css('height', tdHeight + getTMarg -1);
-          //   },1000)
-          //
-          // });
+  $.fn.contentAreaHeight = function() {
+    var otherHgt = $(this).css('marginBottom').replace(/[^-\d\.]/g, '');
+    var bodyHgt = $(window).outerHeight();
+    var elemHgt = $('header').outerHeight() + $('footer').outerHeight();
+    //var footerHgt = ;
+    var contentBoxHgt = bodyHgt - elemHgt - otherHgt;
+    $(this).css('max-height',contentBoxHgt);
+    console.log(contentBoxHgt);
+    console.log(bodyHgt);
+    console.log(otherHgt);
+    //console.log(footerHgt);
+  }//contentAreaHeight end
 
 
-
-            //$('.doa-data-table tr td').css('padding',getTMarg 0 getBMarg );
-            //console.log(getBMarg)
-
-          //  window.tabPadTop = tablePadTop;
-            // $('h3', this).each(function() {
-            //     if($(this).height() > lOneHeight) {
-            //      lOneHeight = $(this).height();
-            //     }
-            //
-            // });
-            //
-            //   $('h4', this).each(function() {
-            //     $(this).addClass('hi');
-            //       if($(this).innerHeight() > lTwoHeight) {
-            //        lTwoHeight = $(this).innerHeight();
-            //       }
-            //   });
-            //   tablePadTop = lOneHeight + lTwoHeight;
-            //   //debugger;
-            //   console.log(lOneHeight);
-            //   console.log(lTwoHeight);
-            //
-            //
-            // //console.log(lOneHeight);
-            // //console.log(lTwoHeight);
-            //
-            // //console.log('element');
-            // $('.doa-data-table').css('margin-top',tablePadTop);
-            // //debugger;
-            // console.log(tablePadTop);
-            // return false;
-        });
-
-
-        //alert(tablePadTop);
-
-      }
-
-
-
-    })( jQuery );
-
-
-
-
+})( jQuery );
+//Functions end
 
 $(document).ready(function (){
-
-  //$('#clpsItemOne').show();
-  //$('#clpsItemLevelOne').show();
-
-  //$('.collapse p').itemPopover();
-  //$('.treecollapse tr').getDtableTopPadding();
-  //$('.treecollapse tr').loop();
+  $('.collapse p').itemPopover();
+  $('.maincontent').contentAreaHeight();
+  //contentAreaHeight();
 })
 
 //document end

@@ -2,6 +2,7 @@
   h3{
     @extend .title-h3;
     @include border-radius($du*2 $du*2 $null $null);
+    font-size: $medium;
 
   }
   p{

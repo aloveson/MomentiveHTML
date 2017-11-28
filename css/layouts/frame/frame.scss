@@ -1,6 +1,6 @@
 body{
   background: $theme--clr-gray;
-  //position: relative;
+  height: 100%;
   z-index:9;
   &:before{
     content: '';
@@ -10,16 +10,10 @@ body{
     background: $theme--clr-dark;
     z-index: -1;
   }
-  // *{
-  //   z-index: 999;
-  // }
   header{
     padding: $du--pm*2 $null;
     @extend .c--center;
-    //background-color:$theme--clr-1;
-    h1{
-    //@include grid-column(3);
-    }
+
   }
   .maincontent{
     background-color:$theme--clr-bright;
@@ -27,11 +21,10 @@ body{
     padding-bottom: $du--pm;
     padding-left:$du--pm;
     padding-right:$du--pm;
-    //@extend .container-fluid;
     @extend .c--center;
     @include border-radius($du*2);
     margin-bottom: $du*15;
-    //max-width: 96.5%;
+    overflow-y: scroll;
   }
   footer{
     background-color:$theme--clr-bright;
